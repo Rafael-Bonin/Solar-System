@@ -1,3 +1,85 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap') ;
+
+* {
+  color: white;
+  font-family: Ubuntu , sans-serif;
   text-align: center;
+  text-shadow: 2px 3px 6px black;
+  margin: 0px;
 }
+
+body {
+  background-image: url('./images/background.png');
+  background-repeat: repeat;
+  background-size: 100vw;
+}
+
+.solarsystem-div {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.planetdiv {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-radius: 10px;
+  background: #FFFFFF70;
+  width: 30vh;
+  height: 30vh;
+  margin: 10px 0;
+}
+
+.planetdiv:hover {
+  background: #FFFFFF00;
+  transition: 2s;
+}
+  
+.card-mission {
+  height: 15vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  margin-bottom: 1.5vh;
+  border: solid 2px white;
+  border-radius: 10px;
+  padding: 3vh;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin: 3.5vh;
+}
+
+h2 {
+  margin: 3vh 0vh;
+}
+
+@media screen and (min-width: 900px) {
+	.solarsystem-div {
+		flex-flow: row wrap;
+    max-width: 70vw;
+    margin: auto;
+    margin-bottom: 4vh;
+	}
+  .planetdiv {
+    margin: 1vh auto;
+  }
+  .missoes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: auto;
+  }
+  .card-mission {
+    flex-flow: column wrap;
+    min-width: 14vh;
+  }
+}
+/* css pego de Iago Medeiros */
